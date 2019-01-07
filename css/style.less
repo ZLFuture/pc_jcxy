@@ -39,17 +39,21 @@
 .titlebox2{.pr;.mb(40px)}
 .titlebox2::before{display:block;content: '';width: 100%;height: 1px;background-color: #e6e6e6;position: absolute;top: 30px;}
 .titlebox2 .tab{.di;.bor(#e5e5e5);height: 61px;.bag1;.pr;.cur}
-.titlebox2 .tab>div{height: 100%;line-height: 61px;.tc;font-size: 30px;.cor9;}
+.titlebox2 .tab>div{height: 100%;line-height: 61px;.tc;font-size: 30px;.cor9;.pr;}
+.titlebox2 .tab>div:first-child{border-right: 1px solid #e6e6e6}
 .titlebox2 .tab>div.active,.titlebox2 .tab>div:hover{color: #202020;}
+.titlebox2 .tab>div.active::after{display:block;content: '';width: 40px;height: 5px;background-color: @cor1;position: absolute;bottom: 0;left: 50%;margin-left: -20px;}
 .titlebox2 .tab1>div{.w(188);}
+.titlebox2 .tab2>div{.w(303);}
 .titlebox2 p{.f16;.cor9;.tc;.lh1;.mt(12)}
 
 .titlebox3{.mb(32)}
-.titlebox3 a{.f16;.cor6;line-height: 54px;}
+.titlebox3 a{.f16;line-height: 54px;}
 .titlebox3 a:hover{color: @cor1}
-.wrap3{.bg(#F5F5F5);.pb(59)}
+.wrap3{.pb(59)}
 .wrap3 .item{padding: 34px 26px 26px 26px;}
-.wrap3 .item .describe{line-height: 22px;}
+.wrap3 .item .describe{line-height: 22px;.text-overflow(6)}
+
 
 .wrap5{padding: 68px 0 80px 0;background-image: url('../images/jpg/pic7.jpg');background-attachment: fixed;background-position: center center; background-repeat: no-repeat;background-size: 1920px 940px}
 .wrap5 .titlebox{.mb(50)}
@@ -81,5 +85,37 @@
   .swiper-button-next, .swiper-container-rtl .swiper-button-prev{background-image:url('../images/png/pic11.png')}
 }
 
+.wrap7 .swiper-slide img{width: 100%;height: 352px;}
+.wrap7 .swiper-slide .tibox{.pos;bottom: 0;left: 0; .wp100;line-height: 55px;background-color: rgba(235, 61, 0, .8);.cor1;.f18;.pl(22)}
+.wrap7 .swiper-container-horizontal>.swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{bottom: 15px;}
+.wrap7 .swiper-pagination{text-align: right;padding-right: 22px;}
+.wrap7 .swiper-pagination-bullet-active{.bag1}
+.wrap7 .list{.pt(26)}
+.wrap7 .item{.pb(30);margin-bottom: 32px;.bor_bb}
+.wrap7 .item:last-child{margin-bottom: 0;}
+.wrap7 .item .left{.pos;top: 0;left: 0;}
+.wrap7 .item .time{margin-top: 8px;}
+.wrap7 .item .right{.pl(70);.pt(7)}
+
+.wrap8{.pt(54);.pb(30)}
+.teacher-list .item{height: 233px;.pl(223);.mb(28);
+	.img-box{.pos;top: 0;left: 0; width: 223px;height: 233px;}
+	.img-box img{width: 100%;height: 100%;}
+	.cont{.bagf5;padding: 36px 34px;height: 100%;}
+	.name{.f24;.cor20;.lh1}
+	.position{.f14;.cor6;line-height: 23px;.ml(24);}
+	.desc{.f16;.cor6;line-height: 29px;.mt(28);.mb(36)}
+	a{.f14;.coreb3d;}
+}
+
+
 .footer{.bag1;}
 .footer .top{padding: 40px 0 36px 0;}
+.footer .top .logo{margin-right: 58px;}
+.footer .top .nav a{.f14;.cor3;.mr(26)}
+.footer .top .nav a:hover{color: #eb3d00}
+.footer .top .wzinfo{padding-top: 14px;}
+.footer .top .wzinfo p{.f12;.cor9;.lh1;.mt(10)}
+.footer .top .wzinfo p a{.f12;.cor9;.lh1;}
+.footer .top .lx{margin-top: 38px;}
+.footer .bottom{line-height: 56px;.bor_tt}
