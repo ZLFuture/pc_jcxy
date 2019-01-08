@@ -5,6 +5,16 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.banner1 {
+  height: 450px;
+  background-image: url('../images/jpg/banner2.jpg');
+  background-size: 1920px 450px;
+  background-position: center center;
+  padding-top: 150px;
+}
+.banner1 p {
+  margin: 24px 0 35px 0;
+}
 .btn {
   -webkit-transition: all 0.35s;
   -moz-transition: all 0.35s;
@@ -125,8 +135,11 @@
   -o-transition: all 0.35s;
   transition: all 0.35s;
 }
-.tabbox li.active,
-.tabbox li:hover {
+.tabbox li a {
+  display: block;
+}
+.tabbox li.active a,
+.tabbox li a:hover {
   color: #eb3d00;
   border-bottom: 1px solid #eb3d00;
 }
@@ -145,6 +158,7 @@
   font-size: 16px;
   color: #FFFFFF;
   width: 100%;
+  /* Center slide text vertically */
   /* Center slide text vertically */
   display: -webkit-box;
   display: -ms-flexbox;
@@ -445,6 +459,69 @@
 .teacher-list .item a {
   font-size: 14px;
   color: #eb3d00;
+}
+.wrap9 {
+  background-color: #f5f5f5;
+  padding-top: 54px;
+}
+.wrap10 {
+  background-color: #f5f5f5;
+  padding-top: 54px;
+  padding-bottom: 60px;
+}
+.wrap10 .item {
+  height: 330px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+}
+.wrap10 .item .item-content {
+  padding: 38px 48px;
+}
+.wrap10 .item .xian {
+  width: 70px;
+  height: 1px;
+  background-color: #eb3d00;
+  margin: 24px 0;
+  text-align: justify;
+}
+.wrap10 .item .text {
+  line-height: 28px;
+  text-overflow: -o-ellipsis-lastline;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  line-clamp: 3;
+  -webkit-box-orient: vertical;
+}
+.wrap10 .item .btn {
+  display: block;
+  width: 100px;
+  height: 34px;
+  background-color: #eb3d00;
+  border-radius: 17px;
+  margin-top: 32px;
+}
+.owl-carousel1 {
+  padding: 12px 0;
+}
+.wrap11 .tabbox,
+.wrap12 .tabbox {
+  margin-bottom: 50px;
+}
+.wenzlist .item {
+  padding: 52px 0 34px 0;
+  border-bottom: 1px solid #e6e6e6;
+}
+.wenzlist .item:hover {
+  background: #fafafa;
+  cursor: pointer;
+}
+.wenzlist .item .heng {
+  line-height: 1;
+  margin-top: 18px;
+  margin-bottom: 26px;
 }
 .footer {
   background: #FFFFFF;
