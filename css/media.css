@@ -1,0 +1,124 @@
+@media screen and (max-width: 414px) {
+  .footer .top {
+    padding: 32px 0 26px 0;
+  }
+  .footer .top .logo {
+    display: none;
+  }
+  .footer .top .lx {
+    float: left;
+  }
+  .footer .bottom {
+    line-height: 56px;
+    border-top: 1px solid #e6e6e6;
+  }
+  .footer .bottom .fr {
+    float: left;
+  }
+  .titlebox h2 {
+    font-size: 30px;
+  }
+  .titlebox h2::after,
+  .titlebox h2::before {
+    width: 30%;
+  }
+  .titlebox2 .tab {
+    height: 50px;
+  }
+  .titlebox2 .tab > div {
+    line-height: 50px;
+    font-size: 22px;
+  }
+  .titlebox2 .tab1 > div {
+    width: 130px;
+  }
+  .wrap1 {
+    padding: 36px 0 14px 0;
+  }
+  .wrap1 .item {
+    padding-left: 38%;
+    margin-bottom: 22px;
+  }
+  .wrap1 .item .img-box {
+    width: 36%;
+  }
+  .wrap1 .item .time {
+    margin-top: 2px;
+    margin-bottom: 10px;
+  }
+  .wrap2 {
+    padding-top: 34px;
+    margin-bottom: 1190px;
+  }
+  .wrap2 .titlebox {
+    margin-bottom: 28px;
+  }
+  .wrap2 .item {
+    margin-bottom: 20px;
+  }
+  .wrap4 {
+    padding-top: 0;
+  }
+  .wrap5 {
+    padding-bottom: 10px;
+  }
+  .wrap5 .item {
+    margin-bottom: 20px;
+    padding: 0 8px;
+  }
+  .wrap6 {
+    padding-top: 48px;
+  }
+  .wrap6 .swiper-wrap {
+    padding: 0 10px;
+    margin-top: 30px;
+  }
+  .wrap6 .swiper-slide .img-box {
+    width: 160px;
+    margin-bottom: 26px;
+  }
+  .wrap6 .swiper-slide .kcname {
+    font-size: 26px;
+    margin-bottom: 18px;
+  }
+}
+/* 小屏幕（平板，大于等于 768px） */
+@media (min-width: 750px) {
+  .titlebox h2::after,
+  .titlebox h2::before {
+    width: 35%;
+  }
+  .wrap2 {
+    height: 408px;
+    margin-bottom: 116px;
+  }
+  .wrap2 .item .top {
+    padding: 20px;
+  }
+  .wrap2 .item h3 {
+    font-size: 22px;
+    line-height: 68px;
+  }
+  .wrap2 .item p {
+    margin-top: 16px;
+    line-height: 21px;
+  }
+  .wrap5 {
+    padding-bottom: 48px;
+  }
+  .wrap5 .item {
+    margin-bottom: 20px;
+    padding: 0 8px;
+  }
+}
+/* 中等屏幕（桌面显示器，大于等于 992px） */
+@media (min-width: 992px) {
+  .titlebox h2::after,
+  .titlebox h2::before {
+    width: 35%;
+  }
+  .wrap1 {
+    padding-top: 68px;
+  }
+}
+/* 大屏幕（大桌面显示器，大于等于 1200px） */
