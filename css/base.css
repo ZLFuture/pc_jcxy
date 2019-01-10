@@ -104,6 +104,9 @@ i {
   font-style: inherit;
   font-size: 12px;
 }
+button {
+  border: none;
+}
 .wp100 {
   width: 100%;
 }
