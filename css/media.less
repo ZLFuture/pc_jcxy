@@ -1,18 +1,27 @@
 @import (reference) "base.less";
 //手机
 @media screen and (max-width: 414px) {
+    .pc-nav{display: none;}
     .footer .top{padding: 32px 0 26px 0;}
     .footer .top .logo{display: none;}
     .footer .top .lx{float: left;}
     .footer .bottom{line-height: 56px;.bor_tt}
     .footer .bottom .fr{float: left;}
+    .banner1{height: 218px;padding-top:72px;background-size: 236% auto;
+        h1{font-size: 30px}
+        p{margin: 15px 0 20px 0;font-size: 16px;}
+    }
     .titlebox{
         h2{font-size: 30px;}
         h2::after,h2::before{width: 30%;}
     }
     .titlebox2 .tab{height: 50px;}
-    .titlebox2 .tab > div{line-height: 50px;font-size: 22px;}
+    .titlebox2 .tab > div{line-height: 50px;font-size: 17px;}
     .titlebox2 .tab1 > div{width: 130px;}
+    .titlebox2 .tab2 > div{width: 160px;}
+    .titlebox3 .fl h3{font-size: 24px;}
+    .titlebox3 .fl p{font-size: 14px;}
+    .titlebox3 a{line-height: 46px;font-size: 14px;}
     .wrap1{padding: 36px 0 14px 0;
         .item{padding-left: 38%;margin-bottom: 22px;
             .img-box{width: 36%;}
@@ -33,12 +42,88 @@
             .kcname{font-size: 26px;margin-bottom: 18px;}
         }
     }
+    .wrap16{padding-top: 26px;
+        .left{display: none;}
+        .right{width: 100%;}
+        .right .desc{font-size: 14px;}
+        .titlebox3{margin-bottom: 10px;}
+        .list{margin-top: 28px;}
+        .item{margin-bottom: 22px;}
+        .item img{width: 50px;}
+        .item h3{margin-bottom: 8px;font-size: 16px;}
+    }
+    .wrap3-1,.wrap3-2{padding-top: 30px;}
+    .wrap3{padding-bottom: 18px;
+        .item{padding: 16px 14px 14px 14px;margin-bottom: 18px;
+            h4{font-size: 15px;line-height: 18px;}
+            .describe{margin-top: 16px;}
+            .describe p{.text-overflow(5);line-height:19px}
+            img{height: 88px;}
+        }
+    }
+    .wrap7{
+        .titlebox2{margin-bottom: 24px;}
+        .swiper-slide{
+            img{height: 230px;}
+            .tibox{padding-right: 42px;font-size: 16px;line-height: 44px;}
+        }
+        .swiper-container-horizontal > .swiper-pagination-bullets, .swiper-pagination-custom, .swiper-pagination-fraction{bottom: 10px;}
+        .item{padding-bottom: 18px;margin-bottom: 18px;
+            .left p:first-child{font-size: 28px;}
+            .right p:first-child{font-size: 16px;}
+            .time{margin-top: 6px;}
+        }
+    }
+    .wrap8{padding-top: 8px;padding-bottom: 0;}
+    .teacher-list .item{padding-left: 30%;height: auto;
+        .img-box{width: 30%;height: 118px;}
+        .cont{padding: 14px 12px;}
+        .desc{line-height: 18px;font-size: 14px;margin-bottom: 4px;margin-top: 8px;}
+        .name{font-size: 20px;}
+        .position{margin-left: 12px;font-size: 14px;}
+    }
+    .wrap9{padding-top: 24px;padding-bottom: 40px;
+        .swiper-slide{padding:14px;height: auto;}
+        .item{
+            .head-img{margin-right: 14px;width: 30%;}
+            h2{font-size: 20px;}
+            .vCenter span{font-size: 14px;}
+            .vCenter img{margin-right: 4px;}
+            .textEll{margin-bottom: 10px;}
+        }
+    }
+    .owl-carousel1{padding: 12px;}
+    .owl-carousel .owl-item img{width: 40%;height: 100%;}
+    .wrap10{padding-top: 30px;padding-bottom: 26px;
+        .titlebox3{margin-bottom: 18px;}
+        .item{height: auto;
+            .item-content{padding: 22px;overflow: hidden;}
+            .xian{margin: 15px 0;}
+            h2{font-size: 20px;}
+            .text{line-height: 22px;}
+            .btn{margin-top: 18px;}
+        }
+    }
+}
+@media (max-width: 1320px) {
+    .wrap16{
+        .left{display: none;}
+        .right{width: 100%;}
+        .row>div.right-wrap{width: 100%;}
+    }
 }
 /* 小屏幕（平板，大于等于 768px） */
-@media (min-width: 750px) { 
+@media (min-width: 750px) {
+    .banner1{height: 350px;padding-top:110px;background-size: 162% auto;
+        h1{font-size: 50px}
+    }
     .titlebox{
         h2::after,h2::before{width: 35%;}
     }
+    .titlebox2 .tab{height: 54px;}
+    .titlebox2 .tab > div{line-height: 54px;font-size: 24px;}
+    .titlebox2 .tab1 > div{width: 130px;}
+    .titlebox2 .tab2 > div{width: 250px;}
     .wrap2{height: 408px; margin-bottom: 116px;}
     .wrap2 .item{
         .top{padding: 20px;}
@@ -47,6 +132,19 @@
     }
     .wrap5{padding-bottom: 48px;}
     .wrap5 .item{margin-bottom: 20px;padding: 0 8px;}
+    .wrap6{
+        .swiper-wrap{padding: 0 28px;}
+    }
+    .wrap16{padding-top: 40px;
+        .list{margin-top: 36px;}
+        .item{margin-bottom: 30px;}
+    }
+    .wrap3{padding-bottom: 18px;
+        .item{
+            .describe,.img-box{height: 176px;}
+            .describe p{font-size: 14px;}
+        }
+    }
 }
 
 /* 中等屏幕（桌面显示器，大于等于 992px） */
@@ -55,6 +153,7 @@
         h2::after,h2::before{width: 35%;}
     }
     .wrap1{padding-top: 68px;}
+    .wrap10 .item.heng .item-content{padding: 38px 20px;}
 }
 
 /* 大屏幕（大桌面显示器，大于等于 1200px） */
