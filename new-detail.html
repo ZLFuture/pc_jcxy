@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <header class="head-fixed-top bag1">
@@ -72,6 +73,26 @@
                     <li><a href="">知识库</a></li>
                     <h6></h6>
                 </ul>
+            </div>
+        </div>
+        <div class="mobile-tabbox">
+            <div class="container">
+                <div class="swiper-container swiper-container-tabbox">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a class="di active" href="http://">院校新闻</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="di " href="http://">行业资讯</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="di " href="http://">媒体聚焦</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="di " href="http://">知识库</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container new-details-wrap">
@@ -187,18 +208,10 @@
         </div>
     </footer>
 </body>
+<script src="js/jquery.min.js"></script>
 <script src="js/swiper.js"></script>
+<script src="js/base.js"></script>
 <script>
-    
-    var swiper = new Swiper('.swiper-container', {
-        pagination: {
-            el: '.swiper-pagination',
-        },
-        autoplay: {
-            delay: 3000,
-            stopOnLastSlide: false,
-            disableOnInteraction: true,
-        }
-    });
+
 </script>
 </html>

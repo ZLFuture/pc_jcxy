@@ -708,6 +708,7 @@ button {
 }
 .head-box-right {
   float: right;
+  padding-top: 22px;
 }
 .head-box-nav {
   margin-top: 32px;

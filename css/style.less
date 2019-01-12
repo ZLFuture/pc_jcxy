@@ -37,7 +37,9 @@
 .tabbox{border-bottom: 1px solid #e6e6e6}
 .tabbox li{.f16;.cor6;margin-right: 52px;line-height: 72px;.fl; cursor: pointer;.trT}
 .tabbox li a{.dk}
-.tabbox li.active a,.tabbox li a:hover{color: @cor1;border-bottom: 1px solid #eb3d00}
+.tabbox li.active a,.tabbox li a:hover,.mobile-tabbox a.active{color: @cor1;border-bottom: 1px solid #eb3d00}
+.mobile-tabbox{display: none;border-bottom: 1px solid #e6e6e6}
+.mobile-tabbox a{line-height: 46px;font-size: 14px;color: #333}
 .img-wrap .item{margin-bottom: 38px;.pr;cursor: pointer;}
 .img-wrap .item .info-box{position: absolute;left: 0;bottom: 0;height: 45px;.bg(rgba(0,0,0,.5));.tc;.f16;.cor1;.wp100;.jdjz;.trT}
 .img-wrap .item:hover .info-box{height: 100%;}
@@ -223,6 +225,7 @@
 	.item{
 		padding: 28px 0 24px 0;
 		p:last-child{margin-top: 14px;}
+		&:hover{background-color: #eee;}
 	}
 	.item:first-child{.mt(12)}
 	.btn1{
@@ -240,12 +243,11 @@
 	.right-wrap{
 		position: relative;
 		margin-top: -166px;
-		height: 728px;
 		background-color: #5d4df6;
 		box-shadow: 0px 16px 28px 0px 
 			rgba(61, 50, 172, 0.22);
 		border-radius: 10px;
-		padding: 54px 66px 0 66px;
+		padding: 54px 66px 62px 66px;
 		.btn2{
 			position: absolute;
 			top: 53px;
@@ -266,7 +268,7 @@
 			color: #fad218;
 			text-align: center
 		}
-		.swiper-slide .img-box{margin-top: 28px;width: 177px;height: 177px;margin-bottom: 0;}
+		.swiper-slide .img-box{margin-top: 28px;width: 177px;margin-bottom: 0;}
 		.swiper-slide .kcname{margin: 36px 0 24px 0;}
 		.bbox{margin-top: 38px;padding-top: 42px;border-top: 1px solid #4b3ecd}
 		.btn3{
@@ -285,6 +287,7 @@
 		}
 	}
 }
+.wrap17-2{display: none;}
 .wrap7-1{
 	padding-top: 82px;
 }
@@ -303,6 +306,35 @@
 	}
 }
 
+.wrap19{
+	padding-bottom: 45px;
+	.item{
+		.trT;.cur;
+		border-radius: 6px;
+		padding: 34px 20px 30px 20px;.bag1;
+		margin-bottom: 28px;
+		box-shadow: 0 3px 20px rgba(0,0,0,.05), 0 -2px 20px rgba(0,0,0,.05);
+		.head-img{width: 130px;margin-right: 20px;}
+		.vCenter{margin-top: 8px;}
+		&:hover{.tr3dPy(0,-4px);h2{color: @cor1}}
+	}
+}
+
+.wrap20{
+	padding-top: 54px;
+	.item{height: 233px;.bag1;
+		.img-box img{width: 223px;}
+		.right-box{padding: 34px 36px 0 36px;}
+		.name{.f24;.cor20;.lh1}
+		.position{.f14;.cor6;line-height: 23px;.ml(24);}
+		.desc{.f16;.cor6;line-height: 29px;.mt(28);.mb(36)}
+		a{.f14;.coreb3d;}
+	}
+	.swiper-button-next, .swiper-button-prev{width: 54px;height: 54px;background-size: 14px 26px;background-position: center center;background-color: rgba(0,0,0,.5);border-radius: 50%};
+	.swiper-button-prev, .swiper-container-rtl .swiper-button-next{background-image:url('../images/png/pic12.png')}
+	.swiper-button-next, .swiper-container-rtl .swiper-button-prev{background-image:url('../images/png/pic11.png')}
+}
+
 .dialog-wrap{
     position: fixed;
     top: 0;
@@ -316,15 +348,25 @@
     .dialog-box{width: 59%;.m0a;.mt(80);.pr;
         .dialog-close-btn{position: absolute;top: 22px;right: 40px;cursor: pointer;}
         .dialog-header{padding: 21px 46px;.bg(#ec3d01)}
-    }
+	}
+	.dialog-box2{width: 692px;.m0a;.mt(80);.pr;
+		.dialog-close-btn{position: absolute;top: 22px;right: 40px;cursor: pointer;}
+	}
 }
 .dialog-box1{
-	.hint{height: 88px;line-height: 88px; .tc;.f18; .cor3; background-color: #f5f5f5;}
-	.content{padding: 0 10%;padding-top: 42px;}
+	.hint{height: 68px;line-height: 68px; .tc;.f18; .cor3; background-color: #f5f5f5;}
+	.content{padding: 0 10%;padding-top: 32px;padding-bottom: 31px;}
+	.sbtn{width: 420px;height: 60px;background-color: #fe7200;border-radius: 4px;border: none;font-size: 20px;.cor1}
 }
+.dialog-box2 .content{
+	padding: 120px 0;
+	img{.dk;.m0a}
+	h2{margin-top: 70px;margin-bottom: 16px;}
+}
+
 .form-warp,.form-warp form{.wp100}
-.form-item{.mb(24)}
-.form-item label{.mb(14)}
+.form-item{.mb(12)}
+.form-item label{.mb(8);font-weight: normal;}
 .form-item label span{color: #ec3d01;}
 .form-warp .form-item input[type="text"],.form-warp .form-item input[type="password"],.form-warp .form-item select{.wp100; height: 60px;.borR(4px);.bor(#d9d9d9);.pl(16);.f16;.cor3;.trT(0.3s)}
 .form-warp .form-item input[type="text"]:hover,.form-box .form-item input[type="text"]:focus,.form-warp .form-item input[type="password"]:hover,.form-warp .form-item input[type="password"]:focus,.form-warp .form-item select:hover,.form-warp .form-item select:focus{border-color: #fe7200;}

@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <header class="head-fixed-top bag1">
@@ -74,16 +75,36 @@
                 </ul>
             </div>
         </div>
+        <div class="mobile-tabbox">
+            <div class="container">
+                <div class="swiper-container swiper-container-tabbox">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a class="di active" href="http://">合作产业</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="di " href="http://">合作资讯</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="di " href="http://">产业信息</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="di " href="http://">合作企业案例</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <div class="container article-details-wrap">
             <h2 class="title f40 cor3 lh1 tc">重庆两江新区半导体产学研基地</h2>
             <p class="adders f16 cor6 lh1 tc">重庆两江新区水土高新区-两江半导体产业园内</p>
             <div class="content">
                 <div class="img-box row">
                     <div class="col-lg-6 col-md-6 col-ms-6 col-sx-6">
-                        <img src="./images/jpg/pic13.jpg" alt="" srcset="">
+                        <img class="wp100" src="./images/jpg/pic13.jpg" alt="" srcset="">
                     </div>
                     <div class="col-lg-6 col-md-6 col-ms-6 col-sx-6">
-                        <img src="./images/jpg/pic13.jpg" alt="" srcset="">
+                        <img class="wp100" src="./images/jpg/pic13.jpg" alt="" srcset="">
                     </div>
                 </div>
                 <p class="f16 cor3">值得一提的是半导体产学研基地开业当天CSEMI集成电路学院也同时开课该学院总面积达2000余平方米将能容纳300名左右学生成电路学院</p>
@@ -139,18 +160,13 @@
         </div>
     </footer>
 </body>
+<script src="js/jquery.min.js"></script>
 <script src="js/swiper.js"></script>
+<script src="js/base.js"></script>
 <script>
-    
-    var swiper = new Swiper('.swiper-container', {
-        pagination: {
-            el: '.swiper-pagination',
-        },
-        autoplay: {
-            delay: 3000,
-            stopOnLastSlide: false,
-            disableOnInteraction: true,
-        }
-    });
+var swiper = new Swiper('.swiper-container-tabbox', {
+    slidesPerView: 4,
+    spaceBetween: 10,
+});
 </script>
 </html>

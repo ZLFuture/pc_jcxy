@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/base.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
 </head>
 <body>
     <header class="head-fixed-top bag1">
@@ -66,10 +67,24 @@
         <div class="tabbox">
             <div class="container">
                 <ul>
-                    <li class="active"><a class="dk" href="http://">学院概况</a></li>
-                    <li><a class="dk" href="http://">联系我们</a></li>
+                    <li class=""><a class="dk" href="http://">学院概况</a></li>
+                    <li class="active"><a class="dk" href="http://">联系我们</a></li>
                     <h6></h6>
                 </ul>
+            </div>
+        </div>
+        <div class="mobile-tabbox">
+            <div class="container">
+                <div class="swiper-container swiper-container-tabbox">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a class="di" href="http://">学院概况</a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="di active" href="http://">联系我们</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container">
@@ -86,9 +101,9 @@
                 <div class="col-lg-5 col-md-5">
                     <div class="right-wrap">
                         <p>公司名称：<span>重庆两江半导体研究院有限公司</span></p>
-                        <p>地		址：<span>重庆市北碚区云汉大道142号</span></p>
-                        <p>电       话：<span>023-66666666</span></p>
-                        <p>邮		箱：<span>023-66668888</span></p>
+                        <p>地　　址：<span>重庆市北碚区云汉大道142号</span></p>
+                        <p>电　　话：<span>023-66666666</span></p>
+                        <p>邮　　箱：<span>023-66668888</span></p>
                         <p>公司网址：<span>http://zqljbdtyjy.china.herostart.com/</span></p>
                     </div>
                 </div>
@@ -96,7 +111,7 @@
         </div>
     </div>
     <div class="">
-        <img src="./images/jpg/pic12.jpg" alt="" srcset="">
+        <img class="wp100" src="./images/jpg/pic12.jpg" alt="" srcset="">
     </div>
     <footer class="footer">
         <div class="container">
@@ -141,18 +156,10 @@
         </div>
     </footer>
 </body>
+<script src="js/jquery.min.js"></script>
 <script src="js/swiper.js"></script>
+<script src="js/base.js"></script>
 <script>
-    
-    var swiper = new Swiper('.swiper-container', {
-        pagination: {
-            el: '.swiper-pagination',
-        },
-        autoplay: {
-            delay: 3000,
-            stopOnLastSlide: false,
-            disableOnInteraction: true,
-        }
-    });
+
 </script>
 </html>
