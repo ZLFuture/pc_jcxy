@@ -5,6 +5,40 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+.banner-text-conns {
+  padding-left: 15px;
+  position: absolute;
+  top: 79px;
+  left: 50%;
+  width: 1200px;
+  margin-left: -600px;
+}
+.banner-text-conns h1 {
+  font-size: 54px;
+}
+.banner-text-conns p {
+  margin-top: 23px;
+}
+.banner-text-conns a {
+  display: inline-block;
+  margin-top: 40px;
+}
+.banner .swiper-container-horizontal > .swiper-pagination-bullets,
+.banner .swiper-pagination-custom,
+.banner .swiper-pagination-fraction {
+  bottom: 40px;
+}
+.banner .swiper-pagination-bullet {
+  width: 50px;
+  height: 2px;
+  background-color: #ffffff;
+  opacity: 0.3;
+  border-radius: 0;
+}
+.banner .swiper-pagination-bullet-active {
+  height: 6px;
+  opacity: 1;
+}
 .banner1 {
   height: 450px;
   background-image: url('../images/jpg/banner2.jpg');
@@ -313,6 +347,12 @@
 .wrap3 .item {
   padding: 34px 26px 26px 26px;
   margin-bottom: 28px;
+}
+.wrap3 .img-box {
+  margin-top: 20px;
+}
+.wrap3 .img-box img {
+  margin-top: 0;
 }
 .wrap3 .item .describe {
   margin-top: 20px;
@@ -964,7 +1004,6 @@
   padding-top: 54px;
 }
 .wrap20 .item {
-  height: 233px;
   background: #FFFFFF;
 }
 .wrap20 .item .img-box img {
@@ -981,7 +1020,6 @@
 .wrap20 .item .position {
   font-size: 14px;
   color: #666666;
-  line-height: 23px;
   margin-left: 24px;
 }
 .wrap20 .item .desc {
