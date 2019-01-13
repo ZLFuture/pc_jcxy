@@ -440,6 +440,44 @@
             </div>
         </div>
     </div>
+    <div class="home-yqhz-wrap bag1">
+        <div class="container">
+            <div class="titlebox">
+                <h2 class="cor20">专家风采</h2>
+                <p class="cor9">扎根川渝  辐射全国</p>
+                <div class="tc">
+                    <a class="di btnhover" href="">MORE</a>
+                </div>
+            </div>
+            <div class="">
+                <div class="swiper-container swiper-home-yqhz">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a class="dk pr" href="">
+                                <img class="wp100" src="./images/jpg/pic19.jpg" alt="" srcset="">
+                                <p class="tc cor1"> 集成电路学院 —— 两江半导体产学研基地</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="dk pr" href="">
+                                <img class="wp100" src="./images/jpg/pic19.jpg" alt="" srcset="">
+                                <p class="tc cor1"> 集成电路学院 —— 两江半导体产学研基地</p>
+                            </a>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="dk pr" href="">
+                                <img class="wp100" src="./images/jpg/pic19.jpg" alt="" srcset="">
+                                <p class="tc cor1"> 集成电路学院 —— 两江半导体产学研基地</p>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="swiper-button-prev"></div><!--左箭头-->
+                    <div class="swiper-button-next"></div><!--右箭头-->
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="wrap6">
         <div class="container">
             <div class="titlebox">
@@ -521,29 +559,51 @@
             </div>
         </div>
     </footer>
+    <div class="fixed-Bridge">
+        <div class="item tc">
+            <span class="iconfont icon-kefu lh1"></span>
+            <p class="f14 lh1" >客服</p>
+        </div>
+        <div class="item weixin tc">
+            <span class="iconfont icon-weixin1 lh1"></span>
+            <p class="f14 lh1" >微信</p>
+        </div>
+        <div class="item  tc">
+            <span class="iconfont icon-weibo lh1"></span>
+            <p class="f14 lh1" >微博</p>
+        </div>
+        <div class="item tc">
+            <span class="iconfont icon-qq lh1"></span>
+            <p class="f14 lh1" >qq</p>
+        </div>
+        <div class="weixin-erweima dn">
+            <img src="./images/png/pic34.png" alt="" srcset="">
+        </div>
+    </div>
 </body>
 <script src="js/jquery.min.js" type=""></script>
+<script src="js/owl.carousel.min.js"></script>
 <script src="js/swiper.js"></script>
 <script src="js/base.js"></script>
 <script>
     
-    var swiper = new Swiper('.swiper-banner', {
+    new Swiper('.swiper-banner', {
         pagination: {
             el: '.swiper-pagination',
         },
-        // autoplay: {
-        //     delay: 3000,
-        //     stopOnLastSlide: false,
-        //     disableOnInteraction: true,
-        // }
+        autoplay: {
+            delay: 3000,
+            stopOnLastSlide: false,
+            disableOnInteraction: true,
+        }
     });
-    var swiper = new Swiper('.swiper-container2', {
+    new Swiper('.swiper-container2', {
         navigation: {
             nextEl: '.swiper-button-next',
             prevEl: '.swiper-button-prev',
         }
     });
-    var swiper = new Swiper('.swiper-container1', {
+    new Swiper('.swiper-container1', {
         direction: 'vertical',
         // autoplay: {
         //     delay: 3000,

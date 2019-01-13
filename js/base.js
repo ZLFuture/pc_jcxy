@@ -10,7 +10,8 @@ var swiper1 = new Swiper('.swiper-container-ye', {
 window.onload = function (){
     $('.navbar-toggle').click(function(){
         console.log(1111)
-        $('#mobileNav').slideToggle()
+        $('#mobileNav').slideToggle();
+        $(this).toggleClass("expanded")
     })
     $('.is-er-nav').hover(function(){
         var name = $(this).attr("data-name");
@@ -24,6 +25,11 @@ window.onload = function (){
     },function(){
         var name = $(this).attr("data-name");
         $(this).hide();
+    })
+    $('.fixed-Bridge .weixin').hover(function(){
+        $('.fixed-Bridge .weixin-erweima').show()
+    },function(){
+        $('.fixed-Bridge .weixin-erweima').hide()
     })
     const bodyW = document.body.clientWidth;
     console.log(bodyW)
@@ -52,6 +58,26 @@ window.onload = function (){
             slidesPerView: 1,
             spaceBetween: 26,
             loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+        new Swiper('.swiper-home-yqhz', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            centeredSlides: true,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+        new Swiper('.swiper-xyfc1', {
+            slidesPerView: 1,
+            spaceBetween: 0,
+            // centeredSlides: true,
+            // loop: true,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
@@ -88,9 +114,29 @@ window.onload = function (){
                 prevEl: '.swiper-button-prev',
             }
         });
+        new Swiper('.swiper-home-yqhz', {
+            slidesPerView: 1.8,
+            spaceBetween: 0,
+            centeredSlides: true,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+        new Swiper('.swiper-xyfc1', {
+            slidesPerView: 3,
+            spaceBetween: 0,
+            // centeredSlides: true,
+            // loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
     }else{
         console.log(1)
-        var swiper = new Swiper('.swiper-container-mjjt', {
+        new Swiper('.swiper-container-mjjt', {
             slidesPerView: 1.8,
             spaceBetween: 0,
             centeredSlides: true,
@@ -114,6 +160,26 @@ window.onload = function (){
             slidesPerView: 2,
             spaceBetween: 26,
             loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+        new Swiper('.swiper-home-yqhz', {
+            slidesPerView: 1.8,
+            spaceBetween: 0,
+            centeredSlides: true,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            }
+        });
+        new Swiper('.swiper-xyfc1', {
+            slidesPerView: 4,
+            spaceBetween: 0,
+            // centeredSlides: true,
+            // loop: true,
             navigation: {
                 nextEl: '.swiper-button-next',
                 prevEl: '.swiper-button-prev',
